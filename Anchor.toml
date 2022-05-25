@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+basilisk_staking = "HukSceTP6dd1oc3C4uKNwakKQowrdQBgK3EJBPmN9Rus"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+# cluster = "http://127.0.0.1:8899"
+cluster = "devnet"
+wallet = "/home/ubuntu/fury/deploy-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
